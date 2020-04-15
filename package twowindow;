@@ -1,0 +1,44 @@
+package twowindow;
+import javafx.application.Application;
+
+import javafx.stage.*;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.scene.Platform;
+import static javafx.stage.Modality.APPLICATION_MODAL;
+import static javafx.stage.Modality.NONE;
+import static javafx.stage.Modality.WINDOW_MODAL;
+
+
+public class window extends Application {
+
+public void start(Stage stage) {
+	VBox root = new VBox();
+	Scene vboxscene=new Scene(root, 300,300);
+	Label showappinfo=new Label("This app is trying to show two windows when you click the go to next page button");
+	Button shownextstage=new Button("Next");
+	shownextstage.setOnAction(e->showanotherstage(null,WINDOW_MODAL));
+	root.getChildren().addAll(showappinfo,shownextstage);
+	stage.setTitle("First Window");
+	stage.setScene(vboxscene);
+	stage.show();
+}
+public void showanotherstage(Window owner, Modality modality) {
+	Stage stage=new Stage();
+	VBox root=new VBox();
+	stage.initOwner(owner);
+	stage.initModality(modality);
+	Label secondstagelabel=new Label("This is a second stage thank you for using my app");
+	stage.setTitle("Second stage");
+	Scene scene= new Scene(root,70,70);
+	root.getChildren().addAll(secondstagelabel);
+	stage.setScene(scene);
+	stage.setResizable(false);
+	stage.show();
+	
+}
+public static void main(String[]args) {
+	Application.launch(args);
+}
+}

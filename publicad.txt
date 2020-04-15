@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>  
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.css">
+<script type="text/javascript" src='script/jquery-3.3.1.min.js'></script>
+<script type="text/javascript" src="script/smallscreen.js"></script>
+<title>Online Music Community For || Nigerian Musicians</title>
+</head>
+<body>
+<header>
+<a href='index.php'><span class='site-name'>Instantsound</span></a>
+
+</header>
+<div style='background:gray;  padding:5px 5px; width:80%;  margin:0 auto; margin-top:50px;'>
+<form method='POST' enctype='multipart/form-data'>
+	<label for='businessname' style='color:black;'>Business Name</label><br />
+	<input type='text' class='ad-input' name='business' placeholder='business name e.g Cocacola or Airtel'><br />
+	<label for='businessname' style='color:black;'>Description</label><br />
+	<input type='text' class='ad-input' name='caption' placeholder='business description e.g We sell shoes,computers etc.'><br />
+	<label for='businessname' style='color:black;'>Business Location</label><br />
+	<input type='text' class='ad-input' name='location' placeholder='business location e.g Lagos,ikeja'><br />
+	<label for='businessname' style='color:black;'>Business website</label><br />
+	<input type='text' class='ad-input' name='website' placeholder='business Website or Facebook  , Instagram link e.g facebook.com/cristiano or jiji.com'><br />
+	<label for='businessname' style='color:black;'>Ad banner(Cannot be greater than 525kb)</label><br />
+	<input type='file' name='file' style='margin-top:5px;'><br /><br />
+	<button type='submit' name='submit' class='adpost-btn'>Upload</button>
+<?php
+if(isset($_POST['submit'])){
+	require 'db.php';
+	$username=trim(htmlspecialchars(stripslashes($_POST['business'])));
+	$caption=trim(htmlspecialchars(stripslashes($_POST['caption'])));
+	$location=trim(htmlspecialchars(stripslashes($_POST['location'])));
+	$web=trim(htmlspecialchars(stripslashes($_POST['website'])));
+	$status='sponsored';
+	$image1name=$_FILES['file']['name'];
+   $image1size=$_FILES['file']['size'];
+   $image1type=$_FILES['file']['type'];
+   $image1error=$_FILES['file']['error'];
+   $image1tmp=$_FILES['file']['tmp_name'];
+   $image1ext=explode(".", $image1name);
+   $image1realext=strtolower(end($image1ext));
+    $allowed=array('jpg','png','jpeg','JPG','JPEG','PNG');
+    if(in_array($image1realext,$allowed)){
+     if($image1size < 520000){
+    if($image1error===0){
+     $image1namenew=uniqid('',true).".".$image1realext;
+     $filedirimage1='image/'.$image1namenew;
+     $day=date('Y-m-d H:i:s');
+  move_uploaded_file($image1tmp, $filedirimage1);
+    $sql="INSERT INTO user_post(username,caption,image,status,location,website) VALUES(?,?,?,?,?,?)";
+  $stmt=mysqli_stmt_init($conn);
+  if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo "Something went wrong";
+  }else{
+    mysqli_stmt_bind_param($stmt,'ssssss',$username,$caption,$image1namenew,$status,$location,$web);
+    mysqli_stmt_execute($stmt);
+     echo "<script>alert('Upload sucessful');</script> ";
+     
+  }
+
+    }else{
+    echo "<script>alert('There was an error uploading your file');</script>";
+    }
+     }
+     else{
+           echo "<script>alert('Your file is too big');</script>";
+     }
+    }else{
+            echo "<script>alert('Invalid file format');</script>";
+    }
+
+
+	
+}
+?>
+
+</form>
+</div>
+<footer style=' width:100%; box-sizing:border-box;'>
+	<br />
+	<ul style='list-style:none; padding-top:2px; color:white; padding-bottom:2px; text-align:center;'>
+		<a href='ad.php'><li style='display:inline; padding-left:5px; font-size:18px; color:white; cursor:pointer;'>Advertise</li></a>
+		<a href='terms.htm'><li style='display:inline; padding-left:5px; font-size:18px; color:white; cursor:pointer;'>Terms</li></a>
+		<a href='#'><li style='display:inline; padding-left:5px; font-size:18px; color:white; cursor:pointer;'>Contact</li></a>
+	</ul>
+	<p style='text-align:center;' id='copyright'>Copyright Nmusic community &copy; 2019</p>
+</footer>
+</body>
+</html>
