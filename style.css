@@ -1,0 +1,1056 @@
+@media screen and (min-width:320px) {
+	*{
+	font-size:15px;
+	font-family:arial;
+	font-weight:400;
+}
+body{
+margin:0;
+padding:0;
+background-image:url("joeboy+instakeep_8762.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+color:white;
+}
+.contenido{
+		width:100%;
+		height:100%;
+
+	}
+	.backgroundslider{
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:-1;
+	}
+	.backgroundslider li{
+		display:block;
+		position:absolute;
+		left:0px;
+		width:100%;
+		height:100%;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		opacity:0;
+		animation:imagenes 18s linear infinite;
+		-moz-animation:imagenes 18s linear infinite;
+		-ms-animation:imagenes 18s linear infinite;
+		-webkit-animation:imagenes 18s linear infinite;
+		-o-animation:imagenes 18s linear infinite;
+
+	}
+
+	.backgroundslider li:nth-child(1){
+		background-image:url("joeboy+instakeep_8762.jpg");
+		width:100%;
+
+	
+	}
+	.backgroundslider li:nth-child(2){
+      background-image:url("wizkidayo+instakeep_f11f8.jpg");
+      width:100%;
+      animation-delay:6s;
+      -moz-animation-delay:6s;
+      -ms-animation-delay:6s;
+      -webkit-animation-delay:6s;
+       -o-animation-delay:6s;
+	}
+	.backgroundslider li:nth-child(3){
+		background-image:url("teknoofficial+instakeep_08de4.jpg");
+		width:100%;
+		  animation-delay:12s;
+      -moz-animation-delay:12s;
+      -ms-animation-delay:12s;
+      -webkit-animation-delay:12s;
+       -o-animation-delay:12s;
+
+	}
+	.backgroundslider li:nth-child(4){
+		background-image:url("tiwasavage+instakeep_daef9.jpg");
+		width:100%;
+		  animation-delay:18s;
+      -moz-animation-delay:18s;
+      -ms-animation-delay:18s;
+      -webkit-animation-delay:18s;
+       -o-animation-delay:18s;
+
+	}
+	@keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-moz-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-o-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-webkit-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+
+	}
+.site-name{
+font-family:tahoma;
+font-weight:bold;
+font-size:18px;
+color:black;
+display:inline;
+}
+#login-form{
+	display:none;
+	float:none;
+	margin-top:0px;
+}
+header{
+	padding:5px 5px;
+	background:white;
+	height:50px;
+	z-index:1;
+	transition:height 1s;
+}
+#sign-in{
+	border:1px solid black;
+	background:white;
+	border-radius:5px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	color:black;
+	margin-top:5px;
+	font-size:13px;
+	cursor:pointer;
+	
+	height:28px;
+	
+}
+#sign-in:hover{
+	background:grey;
+	color:white;
+	opacity:0.8;
+
+}
+.user-name-bar{
+	border:none;
+	margin-right:2px;
+   color:black;
+   padding-left:2px;
+   padding-top:2px;
+   width:100px;
+   margin-top:5px;
+   padding-bottom:2px;
+   padding-right:2px;
+   border-radius:4px;
+
+
+
+
+}
+.user-name-bar:hover{
+border-bottom:1px solid black;
+}
+.password-bar{
+	border:none;
+	margin-right:2px;
+	border-radius:4px;
+	width:100px;
+   padding-left:2px;
+   margin-top:5px;
+   padding-top:2px;
+   padding-bottom:2px;
+   padding-right:2px;
+	color:red;
+
+	
+
+}
+.password-bar:hover{
+border-bottom:1px solid red;	
+}
+#join-button{
+	border:none;
+	background:red;
+	opacity:0.8;
+	color:white;
+    border-radius:5px;
+    padding:4px 4px;
+    margin-top:0px;
+    margin-bottom:8px;
+    width:100px;
+    text-align:center;
+    cursor:pointer;
+    transition:width 4s;
+
+}
+#join-button:hover{
+	width:200px;
+	 opacity:0.8;
+}
+.space-form-class{
+	padding:4px 4px;
+	background:#000000;
+	opacity:0.5;
+	border-radius:5px;
+	margin:0 auto;
+	width:90%;
+	box-sizing:border-box;
+	margin-top:30px;
+}
+#join-username{
+	background:none;
+	color:white;
+	margin-top:4px;
+	width:200px;
+	padding:4px 4px;
+		border:1px solid lightgrey;
+	border-radius:5px;
+}
+#join-username:hover{
+	border:1px solid black;
+	border-radius:4px;
+	box-shadow: inset 4px 4px 4px lightgrey,
+	inset 4px 4px 4px lightgrey;
+}
+#radio-buttons{
+	margin-top:4px;
+}
+h4{
+	font-weight:bold;
+	font-size:20px;
+	font-family:arial;
+	color:black;
+	margin-bottom:0px;
+
+}
+#copyright{
+		font-family:AlexBrush-Regular;
+		font-size:20px;
+}
+@font-face{
+		font-family:AlexBrush-Regular;
+		src:url('AlexBrush-Regular.ttf');
+		src:url('AlexBrush-Regular.ttf?#iefix');
+
+}
+.close{
+	font-size:30px;
+	float:right;
+	color:red;
+	cursor:pointer;
+}
+h3{
+	font-size:30px;
+	text-align:center;
+	font-family:AlexBrush-Regular;
+}
+.main-term-container p{
+font-size:18px;
+line-height:30px;
+text-align:center;
+color:white;
+}
+a:link{
+	text-decoration:none;
+}
+#toggle-btn{
+	display:block;
+	border:none;
+	cursor:pointer;
+	border:2px solid black;
+	float:right;
+	background:none;
+	padding:3px 3px; 
+	border-radius:5px;
+	margin-bottom:3px; 
+}
+#divider{
+	display:block;
+	color:white;
+	clear:both;
+
+}
+.small-form{
+	display:none;
+	width:90%;
+	padding:5px 5px;
+	margin-top:0;
+	box-sizing:border-box;
+}
+#small-screen-form{
+	display:none;
+}
+.small-screen-bar{
+	margin-top:2px;
+	width:100%;
+	margin-left:0;
+	border-radius:5px;
+	border:none;
+	float:none;
+	border:2px solid lightgrey;
+
+}
+.small-screen-bar:hover{
+	margin-top:2px;
+	margin-left:0;
+	border:none;
+	border:1px solid lightblue;
+	border-radius:5px;
+
+}
+.sign-in{
+	border:1px solid black;
+	background:white;
+	border-radius:5px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	color:black;
+	margin-top:5px;
+	font-size:13px;
+	cursor:pointer;
+	
+	height:28px;
+	
+}
+.sign-in:hover{
+	background:grey;
+	color:white;
+	opacity:0.8;
+
+}
+.ad-input{
+	padding:8px 8px;
+	margin-top:5px;
+	border:none;
+	background:black;
+	color:white;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	opacity:0.8;
+	width:100%;
+	margin-bottom:5px;
+	box-sizing:border-box;
+	height:40px;
+}
+.ad-input:hover{
+	border:2px solid lightblue;
+
+}
+.adpost-btn{
+	border:none;
+	background:black;
+	border:2px solid white;
+	text-transform:uppercase;
+	border-radius:5px;
+	padding:5px 5px;
+	padding-top:8px;
+	padding-bottom:8px;
+	opacity:0.8;
+	color:white;
+
+}
+.adpost-btn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+}
+@media screen and (min-width:620px) { 
+	*{
+	font-size:15px;
+	font-family:arial;
+	font-weight:400;
+}
+body{
+margin:0;
+padding:0;
+background-image:url("joeboy+instakeep_8762.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+color:white;
+}
+.contenido{
+		width:100%;
+		height:100%;
+
+	}
+	.backgroundslider{
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:-1;
+	}
+	.backgroundslider li{
+		display:block;
+		position:absolute;
+		left:0px;
+		width:100%;
+		height:100%;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		opacity:0;
+		animation:imagenes 18s linear infinite;
+		-moz-animation:imagenes 18s linear infinite;
+		-ms-animation:imagenes 18s linear infinite;
+		-webkit-animation:imagenes 18s linear infinite;
+		-o-animation:imagenes 18s linear infinite;
+
+	}
+
+	.backgroundslider li:nth-child(1){
+		background-image:url("joeboy+instakeep_8762.jpg");
+		width:100%;
+
+	
+	}
+	.backgroundslider li:nth-child(2){
+      background-image:url("wizkidayo+instakeep_f11f8.jpg");
+      width:100%;
+      animation-delay:6s;
+      -moz-animation-delay:6s;
+      -ms-animation-delay:6s;
+      -webkit-animation-delay:6s;
+       -o-animation-delay:6s;
+	}
+	.backgroundslider li:nth-child(3){
+		background-image:url("teknoofficial+instakeep_08de4.jpg");
+		width:100%;
+		  animation-delay:12s;
+      -moz-animation-delay:12s;
+      -ms-animation-delay:12s;
+      -webkit-animation-delay:12s;
+       -o-animation-delay:12s;
+
+	}
+	.backgroundslider li:nth-child(4){
+		background-image:url("tiwasavage+instakeep_daef9.jpg");
+		width:100%;
+		  animation-delay:18s;
+      -moz-animation-delay:18s;
+      -ms-animation-delay:18s;
+      -webkit-animation-delay:18s;
+       -o-animation-delay:18s;
+
+	}
+	@keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-moz-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-o-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-webkit-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+
+	}
+.site-name{
+font-family:tahoma;
+font-size:25px;
+color:black;
+display:inline;
+}
+#login-form{
+	display:block;
+	float:right;
+	margin-top:0px;
+}
+header{
+	padding:5px 5px;
+	background:white;
+	height:50px;
+}
+#sign-in{
+	border:1px solid black;
+	background:white;
+	border-radius:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:4px;
+	padding-right:4px;
+	color:black;
+	font-size:13px;
+	cursor:pointer;
+	vertical-align:top;
+	height:28px;
+	
+}
+#sign-in:hover{
+	background:grey;
+	color:white;
+	opacity:0.8;
+
+}
+.user-name-bar{
+	border:none;
+	margin-right:2px;
+	border:2px solid white;
+   color:black;
+   padding-left:4px;
+   padding-top:4px;
+   padding-bottom:4px;
+   padding-right:4px;
+   border-radius:4px;
+
+
+
+}
+.user-name-bar:hover{
+border-bottom:1px solid black;
+}
+.password-bar{
+	border:none;
+	margin-right:2px;
+	border-radius:4px;
+   padding-left:4px;
+   padding-top:4px;
+   padding-bottom:4px;
+   padding-right:4px;
+	border:2px solid white;
+	color:red;
+
+	
+
+}
+.password-bar:hover{
+border-bottom:1px solid red;	
+}
+#join-button{
+	border:none;
+	background:red;
+	opacity:0.8;
+	color:white;
+    border-radius:5px;
+    padding:4px 4px;
+    margin-top:10px;
+    margin-bottom:8px;
+    width:100px;
+    text-align:center;
+    cursor:pointer;
+    transition:width 4s;
+
+}
+#join-button:hover{
+	width:200px;
+	 opacity:0.8;
+}
+.space-form-class{
+	padding:4px 4px;
+	background:#000000;
+	opacity:0.8;
+	border-radius:5px;
+	margin:0 auto;
+	width:80%;
+	margin:0 auto;
+	margin-top:30px;
+}
+#join-username{
+	
+	margin-top:4px;
+	width:200px;
+	padding:4px 4px;
+	border:1px solid lightgrey;
+	border-radius:5px;
+}
+#join-username:hover{
+	border:1px solid black;
+	border-radius:4px;
+}
+#radio-buttons{
+	margin-top:4px;
+}
+h4{
+	font-weight:bold;
+	font-size:25px;
+	font-family:arial;
+	color:black;
+	margin-bottom:0px;
+
+}
+#copyright{
+		font-family:AlexBrush-Regular;
+		font-size:20px;
+}
+@font-face{
+		font-family:AlexBrush-Regular;
+		src:url('AlexBrush-Regular.ttf');
+		src:url('AlexBrush-Regular.ttf?#iefix');
+
+}
+.close{
+	font-size:30px;
+	float:right;
+	color:red;
+	cursor:pointer;
+}
+h3{
+	font-size:30px;
+	text-align:center;
+	font-family:AlexBrush-Regular;
+}
+.main-term-container p{
+font-size:18px;
+line-height:30px;
+text-align:center;
+color:white;
+}
+a:link{
+	text-decoration:none;
+}
+#toggle-btn{
+	display:none;
+	border:none;
+	background:none;
+	padding:3px 3px; 
+	border-radius:5px; 
+}
+#divider{
+	display:none;
+}
+
+.small-form{
+display:none;
+}
+.sign-in{
+	border:1px solid black;
+	background:white;
+	border-radius:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:4px;
+	padding-right:4px;
+	color:black;
+	font-size:13px;
+	cursor:pointer;
+	vertical-align:top;
+	height:28px;
+	
+}
+.sign-in:hover{
+	background:grey;
+	color:white;
+	opacity:0.8;
+
+}
+.ad-input{
+	padding:8px 8px;
+	margin-top:5px;
+	border:none;
+	background:black;
+	color:white;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	opacity:0.8;
+	width:100%;
+	margin-bottom:5px;
+	box-sizing:border-box;
+	height:40px;
+}
+.ad-input:hover{
+	border:2px solid lightblue;
+
+}
+.adpost-btn{
+	border:none;
+	background:black;
+	border:2px solid white;
+	text-transform:uppercase;
+	border-radius:5px;
+	padding:5px 5px;
+	padding-top:8px;
+	padding-bottom:8px;
+	opacity:0.8;
+	color:white;
+
+}
+.adpost-btn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+	}
+@media screen and (min-width:1224px) {
+	*{
+	font-size:15px;
+	font-family:arial;
+	font-weight:400;
+}
+body{
+margin:0;
+padding:0;
+background-image:url("joeboy+instakeep_8762.jpg");
+width:100%;
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+color:white;
+}
+.contenido{
+		width:100%;
+		height:100%;
+
+	}
+	.backgroundslider{
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0px;
+		left:0px;
+		z-index:-1;
+	}
+	.backgroundslider li{
+		display:block;
+		position:absolute;
+		left:0px;
+		width:100%;
+		height:100%;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		opacity:0;
+		animation:imagenes 18s linear infinite;
+		-moz-animation:imagenes 18s linear infinite;
+		-ms-animation:imagenes 18s linear infinite;
+		-webkit-animation:imagenes 18s linear infinite;
+		-o-animation:imagenes 18s linear infinite;
+
+	}
+
+	.backgroundslider li:nth-child(1){
+		background-image:url("joeboy+instakeep_8762.jpg");
+		width:100%;
+
+	
+	}
+	.backgroundslider li:nth-child(2){
+      background-image:url("wizkidayo+instakeep_f11f8.jpg");
+      width:100%;
+      animation-delay:6s;
+      -moz-animation-delay:6s;
+      -ms-animation-delay:6s;
+      -webkit-animation-delay:6s;
+       -o-animation-delay:6s;
+	}
+	.backgroundslider li:nth-child(3){
+		background-image:url("teknoofficial+instakeep_08de4.jpg");
+		width:100%;
+		  animation-delay:12s;
+      -moz-animation-delay:12s;
+      -ms-animation-delay:12s;
+      -webkit-animation-delay:12s;
+       -o-animation-delay:12s;
+
+	}
+	.backgroundslider li:nth-child(4){
+		background-image:url("tiwasavage+instakeep_daef9.jpg");
+		width:100%;
+		  animation-delay:18s;
+      -moz-animation-delay:18s;
+      -ms-animation-delay:18s;
+      -webkit-animation-delay:18s;
+       -o-animation-delay:18s;
+
+	}
+	@keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-moz-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-o-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+	}
+		@-webkit-keyframes imagenes{
+		0% {opacity:0;animation-timing-function:ease-in;}
+		10%{opacity:1; animation-timing-function:ease-out;}
+		25%{opacity:1; transform:scale(1);}
+		50%{opacity:0; transform:scale(2); rotate(20deg);}
+		100%{opacity:0; }
+
+	}
+.site-name{
+font-family:tahoma;
+font-size:25px;
+color:black;
+display:inline;
+}
+#login-form{
+	display:block;
+	float:right;
+	margin-top:0px;
+}
+header{
+	padding:5px 5px;
+	background:white;
+	height:50px;
+}
+#sign-in{
+	border:1px solid black;
+	background:white;
+	border-radius:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:4px;
+	padding-right:4px;
+	color:black;
+	font-size:13px;
+	cursor:pointer;
+	vertical-align:top;
+	height:28px;
+	
+}
+#sign-in:hover{
+	background:grey;
+	color:white;
+	opacity:0.8;
+
+}
+.user-name-bar{
+	border:none;
+	margin-right:2px;
+	border:2px solid white;
+   color:black;
+   padding-left:4px;
+   padding-top:4px;
+   padding-bottom:4px;
+   padding-right:4px;
+   border-radius:4px;
+   height:auto;
+   width:auto;
+
+
+
+}
+.user-name-bar:hover{
+border-bottom:1px solid black;
+}
+.password-bar{
+	border:none;
+	margin-right:2px;
+	border-radius:4px;
+   padding-left:4px;
+   padding-top:4px;
+   padding-bottom:4px;
+   padding-right:4px;
+	border:2px solid white;
+	color:red;
+	height:auto;
+	width:auto;
+
+	
+
+}
+.password-bar:hover{
+border-bottom:1px solid red;	
+}
+#join-button{
+	border:none;
+	background:red;
+	opacity:0.8;
+	color:white;
+    border-radius:5px;
+    padding:4px 4px;
+    margin-top:0px;
+    margin-bottom:8px;
+    width:100px;
+    text-align:center;
+    cursor:pointer;
+    transition:width 4s;
+
+}
+#join-button:hover{
+	width:200px;
+	 opacity:0.8;
+}
+.space-form-class{
+	background:#000000;
+	opacity:0.5;
+	border-radius:5px;
+	margin:0 auto;
+	width:300px;
+	box-sizing:border-box;
+	margin-top:30px;
+}
+#join-username{
+	background:none;
+	color:white;
+	margin-top:4px;
+	width:200px;
+	padding:4px 4px;
+		border:1px solid lightgrey;
+	border-radius:5px;
+}
+#join-username:hover{
+	border:1px solid black;
+	border-radius:4px;
+	box-shadow: inset 4px 4px 4px lightgrey,
+	inset 4px 4px 4px lightgrey;
+}
+#radio-buttons{
+	margin-top:4px;
+}
+h4{
+	font-weight:bold;
+	font-size:25px;
+	font-family:arial;
+	color:black;
+	margin-bottom:0px;
+
+}
+#copyright{
+		font-family:AlexBrush-Regular;
+		font-size:20px;
+}
+@font-face{
+		font-family:AlexBrush-Regular;
+		src:url('AlexBrush-Regular.ttf');
+		src:url('AlexBrush-Regular.ttf?#iefix');
+
+}
+.close{
+	font-size:30px;
+	float:right;
+	color:red;
+	cursor:pointer;
+}
+h3{
+	font-size:30px;
+	text-align:center;
+	font-family:AlexBrush-Regular;
+}
+.main-term-container p{
+font-size:18px;
+line-height:30px;
+text-align:center;
+color:white;
+}
+a:link{
+	text-decoration:none;
+}
+#toggle-btn{
+	display:none;
+	border:none;
+	background:none;
+	padding:3px 3px; 
+	border-radius:5px; 
+}
+#divider{
+	display:none;
+}
+#small-screen-form{
+	display:none;
+}
+.small-screen-form{
+	display:none;
+}
+.small-form{
+	display:none;
+}
+.sign-in{
+	border:1px solid black;
+	background:white;
+	border-radius:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:4px;
+	padding-right:4px;
+	color:black;
+	font-size:13px;
+	cursor:pointer;
+	vertical-align:top;
+	height:28px;
+	
+}
+.sign-in:hover{
+	background:grey;
+	color:white;
+	opacity:0.8;
+
+}
+.ad-input{
+	padding:8px 8px;
+	margin-top:5px;
+	border:none;
+	background:black;
+	color:white;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	opacity:0.8;
+	width:100%;
+	margin-bottom:5px;
+	box-sizing:border-box;
+	height:40px;
+}
+.ad-input:hover{
+	border:2px solid lightblue;
+
+}
+.adpost-btn{
+	border:none;
+	background:black;
+	border:2px solid white;
+	text-transform:uppercase;
+	border-radius:5px;
+	padding:5px 5px;
+	padding-top:8px;
+	padding-bottom:8px;
+	opacity:0.8;
+	color:white;
+
+}
+.adpost-btn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+}
